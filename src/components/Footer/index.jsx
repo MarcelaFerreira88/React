@@ -1,9 +1,10 @@
-import "./styles.css"
+import "./styles.css";
 
-const Footer = () => {
-    return <p className="footer">Feito com ❤️ por Marcela Ferreira </p>
-
-
-}
+const Footer = ({mensagem}) => {
+    return( <footer>
+        <p>{mensagem}</p>
+    </footer>
+    );
+};
 
 export default Footer;

@@ -1,11 +1,13 @@
 import "./style.css";
 
-const CaixaDeTexto = ({label,placeholder}) => {
+const CaixaDeTexto = ({label,placeholder,handleChange,value}) => {
     return(
-        <div className="campo-texto">
+        <div  className="campo-texto">
             
     <label>{label}</label>
-    <input placeholder={placeholder}></input>
+    <input value={value}
+    placeholder={placeholder}
+     onChange={handleChange}></input>
     
         </div>
     );

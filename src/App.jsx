@@ -1,20 +1,43 @@
-import CardEstudante from "./components/CardEstudante";
-import Footer from "./components/Footer";
-import Formulario from "./components/Formulario";
 import Header from "./components/Header";
-import ListaDeEstudantes from "./components/listaDeEstudante";
+import Footer from "./components/Footer";
+import ContadorPage from "../../hello-world/src/pages/ContadorPage";
+import{Route,Routes} from "react-router-dom"
+import InicioPage from "../../hello-world/src/pages/InicioPage";
+import ErrorPage from "../../hello-world/src/pages/ErrorPage";
+import SobrePage from "../../hello-world/src/pages/SobrePage";
+import SobreMimPage from "../../hello-world/src/pages/SobrePage/SobreMimPage";
+import SobrePretaLabPage from  "../../hello-world/src/pages/SobrePage/SobrePretaLabPage"
+import PokemonPage from "../../hello-world/src/pages/PokemonPage";
+import EnderecoPage from "./pages/EnderecoPage";
 
 function App() {
-  return (
+ return (
   <>
-  <div style={{marginBottom:"130px"}}/>
   <Header/>
-  <Formulario/>
-  <CardEstudante/>
-  <ListaDeEstudantes/>
-  <Footer/>
+
+  <div style={{marginBottom:"130px"}}>
+
+  <Routes>
+    <Route path="/" element={<InicioPage/>}/>
+    <Route path ="/contador" element={<ContadorPage/>}/>
+    <Route path="/pokemon" element={<PokemonPage/>} />
+    <Route path="/endereco" element={<EnderecoPage/>} />
+    <Route path="/sobre">
+      <Route index element={<SobrePage/>} />
+      <Route path="mim" element={<SobreMimPage/>}/>
+      <Route path="preta-lab" element={<SobrePretaLabPage/>}/>//
+      </Route>
+    <Route path ="*" element={<ErrorPage/>}/>
+  </Routes>
+  
+  </div>
+  
+  <Footer mensagem="Feito com ❤️ por Marcela Ferreira" />
   </>
-  )  
-}
+  );
+};
 
 export default App;
+
+
+  
