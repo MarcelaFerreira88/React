@@ -4,6 +4,7 @@ import Link from "@mui/material/Link";
 import Stack from "@mui/material/Stack";
 import TextField from "@mui/material/TextField";
 import Typography  from "@mui/material/Typography";
+import { Axios } from "axios";
 import { useState } from "react";
 
 
@@ -14,6 +15,19 @@ const EndereçoPage =() =>{
     const [estado, setEstado] =useState("");
     const [latitude, setLatitude] =useState("");
     const [longitude, setLongitude] =useState("");
+
+
+
+
+    consultarCEP= async () =>{
+        try{ const resposta = await axios.get("")
+
+        }catch (erro){
+            console.erro("Um erro aconteceu ao buscar o CEP")
+        }
+    }
+
+
 
     return(
 <Box 
@@ -43,7 +57,7 @@ width="70vw"
     value={cep}
     onChange = {(event) => setCep(event.target.value)}
     />
-    <Button variant = "contained">Buscar</Button>
+    <Button variant = "contained" onClick={}>Buscar</Button>
     
     </Stack>
 
