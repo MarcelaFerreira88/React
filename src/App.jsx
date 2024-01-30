@@ -20,7 +20,7 @@ function App() {
   <Routes>
     <Route path="/" element={<InicioPage/>}/>
     <Route path ="/contador" element={<ContadorPage/>}/>
-    <Route path="/pokemon" element={<PokemonPage/>} />
+    <Route path="/pokemons" element={<PokemonPage/>} />
     <Route path="/endereco" element={<EnderecoPage/>} />
     <Route path="/sobre">
       <Route index element={<SobrePage/>} />
