@@ -2,7 +2,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ContadorPage from "../../hello-world/src/pages/ContadorPage";
 import{Route,Routes} from "react-router-dom"
-import InicioPage from "../../hello-world/src/pages/InicioPage";
+import EstudantesPage from "../../hello-world/src/pages/InicioPage";
 import ErrorPage from "../../hello-world/src/pages/ErrorPage";
 import SobrePage from "../../hello-world/src/pages/SobrePage";
 import SobreMimPage from "../../hello-world/src/pages/SobrePage/SobreMimPage";
@@ -18,7 +18,8 @@ function App() {
   <div style={{marginBottom:"130px"}}>
 
   <Routes>
-    <Route path="/" element={<InicioPage/>}/>
+    <Route path="/" element={<SobreMimPage/>}/>
+    <Route path="/estudantes" element={<EstudantesPage/>}/>
     <Route path ="/contador" element={<ContadorPage/>}/>
     <Route path="/pokemons" element={<PokemonPage/>} />
     <Route path="/endereco" element={<EnderecoPage/>} />
