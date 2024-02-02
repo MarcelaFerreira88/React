@@ -2,8 +2,8 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ContadorPage from "./components/Contador";
 import{Route,Routes} from "react-router-dom"
-import EstudantesPage from "../../hello-world/src/pages/InicioPage";
-import ErrorPage from "../../hello-world/src/pages/ErrorPage";
+import EstudantesPage from "./pages/InicioPage";
+import ErrorPage from "./pages/ErrorPage";
 import SobrePage from "../../hello-world/src/pages/SobrePage";
 import SobreMimPage from "../../hello-world/src/pages/SobrePage/SobreMimPage";
 import SobrePretaLabPage from  "../../hello-world/src/pages/SobrePage/SobrePretaLabPage"
