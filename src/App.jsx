@@ -4,10 +4,10 @@ import ContadorPage from "./components/Contador";
 import{Route,Routes} from "react-router-dom"
 import EstudantesPage from "./pages/InicioPage";
 import ErrorPage from "./pages/ErrorPage";
-import SobrePage from "../../hello-world/src/pages/SobrePage";
-import SobreMimPage from "../../hello-world/src/pages/SobrePage/SobreMimPage";
-import SobrePretaLabPage from  "../../hello-world/src/pages/SobrePage/SobrePretaLabPage"
-import PokemonPage from "../../hello-world/src/pages/PokemonPage";
+import SobrePage from "./pages/SobrePage";
+import SobreMimPage from "./pages/SobrePage/SobreMimPage";
+import SobrePretaLabPage from  "./pages/SobrePage/SobrePretaLabPage"
+import PokemonPage from "./pages/PokemonPage";
 import EnderecoPage from "./pages/EnderecoPage";
 
 function App() {
