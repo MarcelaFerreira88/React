@@ -1,6 +1,6 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import ContadorPage from "../../hello-world/src/pages/ContadorPage";
+import ContadorPage from "./components/Contador";
 import{Route,Routes} from "react-router-dom"
 import EstudantesPage from "../../hello-world/src/pages/InicioPage";
 import ErrorPage from "../../hello-world/src/pages/ErrorPage";
