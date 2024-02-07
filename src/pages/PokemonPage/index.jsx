@@ -18,7 +18,7 @@ const PokemonPage = () => {
 
     const Pegar100ReferenciasPokemos = async() =>{
     try{
-        const resposta = await axios.get("https://pokeapi.co/api/v2/pokemon?limit=500");
+        const resposta = await axios.get("https://pokeapi.co/api/v2/pokemon?limit=100");
         setReferenciasPokemons(resposta.data.results);
         
         
