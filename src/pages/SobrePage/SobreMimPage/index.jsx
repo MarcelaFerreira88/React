@@ -1,8 +1,10 @@
-const SobreMimPage = () => {
+import Box from "@mui/material/Box";
 
-return (<h1>
-    Sobre Mim Page
-</h1>)
+
+const SobreMimPage = () => {
+return (<Box> 
+    
+</Box>)
 }
 
 export default SobreMimPage;
