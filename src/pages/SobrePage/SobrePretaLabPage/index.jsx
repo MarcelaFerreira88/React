@@ -1,7 +1,32 @@
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
+import Paper from "@mui/material/Paper";
+
 const SobrePretaLabPage = () => {
-    return(
-        <h1>Sobre Preta lab </h1>
-    )
-}
+  return (
+    <div style={{ display: "flex" }}>
+      <Paper elevation={3} style={{ flex: 1, margin: 16, padding: 16 }}>
+        <Stack spacing={2} justifyContent="flex-start">
+          <Typography variant="h4">Quem é a PretaLab?</Typography>
+          <Typography variant="h6">
+            A PretaLab é uma iniciativa do Olabi, organização social que trabalha para trazer diversidade para a tecnologia e inovação. <br />
+            
+            <br />
+            E se descreve como: "Somos uma plataforma que conecta mulheres negras que são ou gostariam de ser da tecnologia, por meio dos nossos ciclos formativos, rede de profissionais, mercado de trabalho, consultorias e estudos.".
+          </Typography>
+        </Stack>
+      </Paper>
+
+      <Paper elevation={3} style={{ flex: 1, margin: 16, padding: 16 }}>
+        <Stack spacing={2} justifyContent="flex-start">
+          <Typography variant="h4">Depoimento sobre o Preta Lab?</Typography>
+          <Typography variant="h6">
+            A PretaLab me fez sentir pertencente e proporcionou um ambiente seguro para aprender e adquirir novos conhecimentos
+          </Typography>
+        </Stack>
+      </Paper>
+    </div>
+  );
+};
 
 export default SobrePretaLabPage;

@@ -2,7 +2,7 @@ import "./styles.css";
 import { useEffect, useState } from "react";
 import CardPokemon from "../../components/CardPokemon"
 import axios from "axios";
-import CircularProgress from '@mui/material/CircularProgress';
+//import CircularProgress from '@mui/material/CircularProgress';
 
 
 
@@ -10,7 +10,7 @@ import CircularProgress from '@mui/material/CircularProgress';
 const PokemonPage = () => {
     
     const[referenciasPokemons,setReferenciasPokemons] = useState([]);
-    const [carregando, setCarregando] = useState();
+    const [carregando, setCarregando] = useState(true);
     const[listaPokemons, setListaPokemons] = useState([]);
     
     
@@ -47,8 +47,9 @@ const pegarListaDePokemons = async () => {
             console.error("Erro ao buscar o pokemon", error);
         }
     }
+    setTimeout(() => {
     setListaPokemons(listaTemporaria);
-    setCarregando();  
+    setCarregando(false);  }, 2000);
 };
 
 
@@ -60,9 +61,10 @@ useEffect(() => {
 
     return(
         <div className="pokemon-container">
-            {carregando ? (
-        //<p>Carregando...</p>
-        <CircularProgress />
+            {carregando?(
+            <h1>Carregando...</h1>
+            
+        //<CircularProgress/>
       ) : (listaPokemons.map((pokemon) =>(
                 <CardPokemon 
                 key={pokemon.id}
