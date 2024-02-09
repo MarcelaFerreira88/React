@@ -21,7 +21,18 @@ const SobrePretaLabPage = () => {
         <Stack spacing={2} justifyContent="flex-start">
           <Typography variant="h4">Depoimento sobre o Preta Lab?</Typography>
           <Typography variant="h6">
-            A PretaLab me fez sentir pertencente e proporcionou um ambiente seguro para aprender e adquirir novos conhecimentos
+            A PretaLab me fez sentir pertencente e proporcionou um ambiente seguro para aprender e adquirir novos conhecimentos.<br /><br />
+
+            <strong>Habilidades técnicas aprendidas:</strong><br />
+            HTML5 e CSS3, Lógica de programação,<br />
+            JavaScript - entrada, processamento e saída de dados.,ReactJS,Testes unitários,<br />
+            Git/Github.<br />
+
+            Tópicos do pilar de autoconhecimento: autonomia, segurança, pertencimento, gestão emocional e de conflitos,
+            comunicação, liderança situacional, plano de carreira, feedbacks assertivos e autoavaliação.
+
+
+
           </Typography>
         </Stack>
       </Paper>
