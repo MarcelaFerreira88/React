@@ -49,7 +49,7 @@ const pegarListaDePokemons = async () => {
     }
     setTimeout(() => {
     setListaPokemons(listaTemporaria);
-    setCarregando(false);  }, 2000);
+    setCarregando(false);  }, 1000);
 };
 
 
