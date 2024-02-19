@@ -17,7 +17,7 @@ const PokemonPage = () => {
 
 
     const Pegar100ReferenciasPokemos = async() =>{
-    try{
+    try{setCarregando(true);
         const resposta = await axios.get("https://pokeapi.co/api/v2/pokemon?limit=100");
         setReferenciasPokemons(resposta.data.results);
         
@@ -26,7 +26,7 @@ const PokemonPage = () => {
         console.error("Erro ao buscar as referências dos pokemon", error)
         
     }
-};
+    setCarregando(false)};
 
 useEffect(() =>{
 
@@ -38,6 +38,7 @@ useEffect(() =>{
 
 
 const pegarListaDePokemons = async () => {
+    setCarregando(true);
     const listaTemporaria = [];
     for (const referencia of referenciasPokemons){
         try{
