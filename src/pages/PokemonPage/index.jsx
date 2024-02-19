@@ -63,7 +63,7 @@ useEffect(() => {
     return(
         <div className="pokemon-container">
             {carregando?(
-            <h1>Carregando...</h1>
+            <h1>Carregando lista pokemons...</h1>
             
         //<CircularProgress/>
       ) : (listaPokemons.map((pokemon) =>(
