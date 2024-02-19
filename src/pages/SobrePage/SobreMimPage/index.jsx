@@ -6,7 +6,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 const SobreMimPage = () => {
 
-const imagemUrl = "fotomarcela2.jpg";
+const imagemUrl = "/fotomarcela2.jpg";
 
 
 return (<Box margin="10px" display="flex" alignItems="center" justifyContent="center">
